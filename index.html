@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakso Lezat</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aos -->
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --light-green: #d6efd8;
+        --medium-green: #80af81;
+        --dark-green: #508d4e;
+        --darker-green: #1a5319;
+        --white: #ffffff;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-green) !important;
+        color: var(--dark-green) !important;
+      }
+
+      .navbar {
+        background-color: var(--medium-green);
+      }
+
+      h2,
+      h3 {
+        font-weight: 700;
+        color: var(--darker-green);
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--dark-green);
+      }
+
+      .nav-link {
+        font-weight: 700;
+        color: var(--white);
+        margin-right: 15px;
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+        color: var(--white);
+      }
+
+      footer {
+        background-color: var(--dark-green) !important;
+      }
+
+      .btn-primary {
+        background-color: var(--medium-green);
+        border-color: var(--dark-green);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--dark-green);
+      }
+      .container {
+        flex: 1;
+      }
+
+      #testimonial {
+        background-color: var(--light-green) !important;
+      }
+      #contact {
+        background-color: var(--light-green) !important;
+      }
+      footer {
+        /* background: linear-gradient(
+          to right,
+          #2c3e50,
+          #4f6d7a
+        ); Darker blue gradient */
+        padding: 30px;
+        text-align: center;
+        color: white;
+        margin-left: -15px; /* Adjust margin to cover body padding */
+        margin-right: -15px; /* Adjust margin to cover body padding */
+      }
+
+      #home {
+        min-height: 100vh; /* Ganti height dengan min-height */
+        background: url("https://img.kurio.network/rE9S29CrLtZ_dW5BiVsp7RufHZw=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/11/15/2cbee642-ecd0-4f1f-9d0b-23acb574fe59.jpe")
+          no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Pastikan tidak ada elemen yang melampaui batas */
+        margin-left: -15px; /* Menyesuaikan margin untuk menutupi padding body */
+        margin-right: -15px; /* Menyesuaikan margin untuk menutupi padding body */
+      }
+
+      body {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .menu-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 440px;
+        border-radius: 20px;
+        background-color: var(--white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .menu-card .card-body {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .menu-card .card-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--darker-green);
+        margin-bottom: 10px;
+      }
+
+      .menu-card p {
+        color: var(--dark-green);
+        font-weight: 500;
+      }
+
+      .text-price {
+        color: var(--darker-green);
+        font-size: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container p-3 mx-auto">
+        <a
+          class="navbar-brand fw-bold fs-4"
+          href="#"
+          style="color: var(--white)"
+          >Bakso Lezat</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section with Background Image -->
+    <section
+      id="home"
+      class="d-flex align-items-center justify-content-center bg-primary text-white text-center"
+      style="
+        height: 100vh;
+        background: url('https://img.kurio.network/rE9S29CrLtZ_dW5BiVsp7RufHZw=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/11/15/2cbee642-ecd0-4f1f-9d0b-23acb574fe59.jpe')
+          no-repeat center center;
+        background-size: cover;
+      "
+    >
+      <div class="container text-center" data-aos="fade-up">
+        <div
+          class="p-5"
+          style="background-color: rgba(0, 0, 0, 0.5); border-radius: 20px"
+        >
+          <h1 class="display-4 fw-bold text-white text-shadow">
+            Selamat Datang di Bakso Lezat
+          </h1>
+          <p class="lead text-white">
+            Nikmati kenikmatan Bakso Premium dengan Cita Rasa Lokal
+          </p>
+          <a href="#menu" class="btn btn-light btn-lg">Lihat Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container text-center" data-aos="fade-up">
+        <h2
+          class="fw-bold mb-4 text-uppercase text-primary text-center border-bottom pb-3 d-inline-block"
+          style="
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          "
+        >
+          Tentang Kami
+        </h2>
+        <p class="text-muted fs-5 fst-italic">
+          Di Bakso Lezat, kami percaya bahwa kelezatan berasal dari hati.
+          Sebagai UMKM lokal, kami bangga membawa cita rasa autentik bakso khas
+          Indonesia langsung ke meja makan Anda. Sejak didirikan pada tahun
+          <b>2010</b>, kami terus mempertahankan tradisi keluarga dengan bahan
+          segar, tanpa pengawet, dan teknik memasak yang diwariskan secara
+          turun-temurun.
+        </p>
+        <div class="my-4">
+          <img
+            src="https://png.pngtree.com/png-clipart/20230120/ourlarge/pngtree-thumbs-up-male-meatball-vendor-logo-design-png-image_6563706.png"
+            class="img-fluid"
+            style="
+              width: 250px;
+              height: auto;
+              margin: 10px;
+              border-radius: 50%;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            "
+            alt="Logo Bakso Lezat"
+          />
+        </div>
+        <p class="text-muted fs-5 fst-italic">
+          Dengan komitmen untuk terus berkembang, kami berhasil meraih
+          penghargaan <i>Best Local Culinary</i> pada tahun <b>2023</b>.
+          Penghargaan ini menjadi bukti dedikasi kami terhadap kualitas dan
+          pelayanan terbaik. Kami mengundang Anda untuk bergabung menjadi bagian
+          dari keluarga besar Bakso Lezat dan merasakan pengalaman rasa yang
+          tiada duanya.
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <i class="fas fa-seedling fa-3x text-primary mb-3"></i>
+            <h5 class="fw-bold">Bahan Berkualitas</h5>
+            <p class="text-muted fs-5">
+              Kami hanya menggunakan daging sapi pilihan dan bahan-bahan alami
+              terbaik yang segar untuk memastikan cita rasa sempurna di setiap
+              mangkuk.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-utensils fa-3x text-success mb-3"></i>
+            <h5 class="fw-bold">Resep Tradisional</h5>
+            <p class="text-muted fs-5">
+              Resep rahasia yang telah diwariskan selama beberapa generasi,
+              dipadukan dengan inovasi modern untuk menghasilkan rasa autentik
+              yang memanjakan lidah.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-truck fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold">Pelayanan Cepat</h5>
+            <p class="text-muted fs-5">
+              Dengan layanan yang ramah dan efisien, kami memastikan bahwa
+              pengalaman Anda bersama kami akan selalu memuaskan, mulai dari
+              pemesanan hingga hidangan tersaji.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2
+          class="text-center fw-bold mb-4"
+          style="
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            color: #34495e;
+          "
+        >
+          Menu Favorit Kami
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-card">
+              <img
+                src="https://img.kurio.network/rE9S29CrLtZ_dW5BiVsp7RufHZw=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/11/15/2cbee642-ecd0-4f1f-9d0b-23acb574fe59.jpe"
+                alt="Bakso Polos"
+              />
+              <div class="card-body flex-1">
+                <h4 class="card-title">Bakso Polos</h4>
+                <p>Kenikmatan sederhana bakso daging sapi murni.</p>
+                <h5 class="text-price">Rp 12.000</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-card">
+              <img
+                src="https://img.kurio.network/MK7TUsKyi-7VWpeRv1YcZpKq7bo=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/10/29/2e53184a-265b-4548-923d-91cf882aa6fa.jpe"
+                alt="Bakso Mozzarella"
+              />
+              <div class="card-body flex-1">
+                <h4 class="card-title">Bakso Mozzarella</h4>
+                <p>Sensasi lumer keju di setiap gigitan.</p>
+                <h5 class="text-price">Rp 20,000</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-card">
+              <img
+                src="https://down-id.img.susercontent.com/file/21590be9527495463a84d558e3f6fd10"
+                alt="Bakso Urat"
+              />
+              <div class="card-body flex-1">
+                <h4 class="card-title">Bakso Urat</h4>
+                <p>Tekstur urat yang khas dengan rasa otentik.</p>
+                <h5 class="text-price">Rp 17,000</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Link Menu Selengkapnya -->
+        <div class="text-center mt-4">
+          <a
+            href="menu.html"
+            class="btn btn-xl shadow"
+            style="
+              font-size: 1.2rem;
+              border-radius: 10px;
+              padding: 10px;
+              background-color: var(--dark-green);
+              color: var(--white);
+            "
+          >
+            Menu Selengkapnya
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+
+    <section id="testimonial" class="py-5 bg-light">
+      <div class="container">
+        <h2
+          class="fw-bold mb-5 text-center text-primary text-uppercase"
+          data-aos="fade-up"
+          style="
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          "
+        >
+          Apa Kata Pelanggan Kami?
+        </h2>
+        <div class="row text-center">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4 mb-3" data-aos="fade-left">
+            <div class="card border-0 shadow-sm p-4">
+              <div class="card-body">
+                <img
+                  src="https://storage.googleapis.com/a1aa/image/d5fcae81-6bd1-4ebe-b8b5-d2db427f6cc0.jpeg"
+                  alt="Profile Andi"
+                  class="rounded-circle mx-auto d-block mb-3"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border: 3px solid #007bff;
+                  "
+                />
+                <h5 class="card-title fw-bold">Ahmad</h5>
+                <p class="text-muted small">Pelanggan Setia</p>
+                <p class="card-text text-muted fst-italic">
+                  "Baksonya sangat enak, terasa dagingnya. Pelayanan cepat
+                  juga!"
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow-sm p-4" data-aos="zoom-in">
+              <div class="card-body">
+                <img
+                  src="https://storage.googleapis.com/a1aa/image/9331651d-78af-45c2-9126-ff6d949ae865.jpeg"
+                  alt="Profile Siti"
+                  class="rounded-circle mx-auto d-block mb-3"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border: 3px solid #28a745;
+                  "
+                />
+                <h5 class="card-title fw-bold">Adit</h5>
+                <p class="text-muted small">Penggemar Bakso</p>
+                <p class="card-text text-muted fst-italic">
+                  "Bakso mozzarella-nya benar-benar lezat, keju meleleh di
+                  mulut!"
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow-sm p-4" data-aos="fade-right">
+              <div class="card-body">
+                <img
+                  src="https://storage.googleapis.com/a1aa/image/69722a96-bc44-48e5-925a-1f7e8c11b3bb.jpeg"
+                  alt="Profile Joko"
+                  class="rounded-circle mx-auto d-block mb-3"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border: 3px solid #ffc107;
+                  "
+                />
+                <h5 class="card-title fw-bold">Joko</h5>
+                <p class="text-muted small">Pengunjung Baru</p>
+                <p class="card-text text-muted fst-italic">
+                  "Saya suka dengan kualitas dan rasa bakso yang konsisten
+                  setiap kali datang."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq Section -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2
+          class="fw-bold mb-4 text-center text-primary text-uppercase"
+          style="
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          "
+        >
+          Pertanyaan yang Sering Diajukan (FAQ)
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="true"
+                aria-controls="faqCollapseOne"
+              >
+                Apa jam operasional Bakso Lezat?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Kami buka setiap hari dari pukul
+                <strong>10:00 pagi</strong> hingga <strong>9:00 malam</strong>.
+                Kami siap melayani Anda dengan bakso terbaik!
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                Apakah Bakso Lezat menyediakan layanan pesan antar?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Ya, kami menyediakan layanan pesan antar melalui aplikasi
+                seperti
+                <strong>GoFood</strong> dan <strong>GrabFood</strong>. Nikmati
+                bakso favorit Anda dari kenyamanan rumah!
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree"
+                aria-expanded="false"
+                aria-controls="faqCollapseThree"
+              >
+                Apakah ada menu khusus untuk vegetarian?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Tentu! Kami memiliki <strong>Bakso Sayur</strong> yang dibuat
+                khusus untuk pelanggan vegetarian. Semua bahan bebas daging,
+                tetapi tetap kaya rasa.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour"
+                aria-expanded="false"
+                aria-controls="faqCollapseFour"
+              >
+                Apakah tersedia reservasi tempat?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Ya, Anda dapat melakukan reservasi untuk acara atau pertemuan
+                melalui <strong>WhatsApp</strong> kami di nomor (021) 123-4567.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2
+          class="fw-bold mb-4 text-uppercase text-primary text-center border-bottom pb-3 d-inline-block mx-auto"
+          style="
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          "
+        >
+          Kontak Kami
+        </h2>
+        <p
+          class="fs-4 mb-5 text-muted text-center"
+          style="max-width: 700px; margin: 0 auto"
+        >
+          Jangan ragu untuk menghubungi kami! Kami siap membantu Anda dengan
+          pertanyaan atau pesanan khusus. Kami juga tersedia di media sosial!
+        </p>
+
+        <div class="row gy-4">
+          <!-- Email Section -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-sm text-center"
+              data-aos="fade-left"
+            >
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-envelope fa-3x text-primary"
+                    style="
+                      background: rgba(0, 123, 255, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Email</h5>
+                <p class="fs-5 text-muted">baksolezat@email.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- Phone Section -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center" data-aos="zoom-in">
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-phone-alt fa-3x text-success"
+                    style="
+                      background: rgba(40, 167, 69, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Telepon</h5>
+                <p class="fs-5 text-muted">(021) 123-4567</p>
+              </div>
+            </div>
+          </div>
+          <!-- Address Section -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-sm text-center"
+              data-aos="fade-right"
+            >
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-map-marker-alt fa-3x text-danger"
+                    style="
+                      background: rgba(220, 53, 69, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Alamat</h5>
+                <p class="fs-5 text-muted">Jl. Bakso No. 1, Jakarta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="map-container">
+              <!-- Embed Google Map with custom coordinates -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1190151610435!2d104.05175278891501!3d1.1156491047808836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMXYuMTE1NjQ5MSwgMTA0LjA1MTc1MjU4OTE1!5e0!3m2!1sen!2sid!4v1670358385686!5m2!1sen!2sid"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="text-center mt-5">
+          <a
+            href="mailto:baksolezat@email.com"
+            class="btn btn-md px-4 py-2 rounded-pill shadow-sm"
+            style="
+              font-size: 1.2rem;
+              background-color: var(--dark-green);
+              color: var(--white);
+            "
+          >
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p class="text-white mb-0">
+          &copy; 2024 Bakso Lezat. All rights reserved.
+        </p>
+        <p class="text-white mb-0">
+          Follow us on
+          <a href="#" class="text-white text-decoration-none">Instagram</a> |
+          <a href="#" class="text-white text-decoration-none">Facebook</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500, // Durasi animasi (dalam milidetik)
+        once: true, // Animasi hanya berjalan sekali saat di-scroll
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Selengkapnya - Bakso Lezat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aos -->
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --light-green: #f3f9f3;
+        --medium-green: #80af81;
+        --dark-green: #508d4e;
+        --darker-green: #1a5319;
+        --white: #ffffff;
+        --light-gray: #f7f7f7;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-green);
+        color: var(--dark-green);
+        margin: 0;
+        padding: 0;
+      }
+
+      h2,
+      h3 {
+        font-weight: 700;
+        color: var(--darker-green);
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .navbar {
+        background-color: var(--medium-green);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--white);
+      }
+
+      .nav-link {
+        font-weight: 500;
+        color: var(--white);
+        margin-right: 15px;
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+        color: var(--white);
+      }
+
+      footer {
+        background-color: var(--dark-green);
+        padding: 20px;
+        text-align: center;
+        color: var(--white);
+        font-size: 14px;
+        margin-top: 50px;
+      }
+
+      .menu-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 440px;
+        border-radius: 20px;
+        background-color: var(--white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .menu-card .card-body {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .menu-card .card-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--darker-green);
+        margin-bottom: 10px;
+      }
+
+      .menu-card p {
+        color: var(--dark-green);
+        font-weight: 500;
+      }
+
+      .text-price {
+        color: var(--darker-green);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .menu-section {
+        margin-bottom: 50px;
+      }
+
+      .menu-section h3 {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Bakso Lezat</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#makanan">Makanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#minuman">Minuman</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Menu Selengkapnya</h2>
+
+        <!-- Section Makanan -->
+        <!-- Section Makanan -->
+        <div class="menu-section" id="makanan">
+          <h3 class="text-start">Makanan</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-left">
+                <img
+                  src="https://img.kurio.network/rE9S29CrLtZ_dW5BiVsp7RufHZw=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/11/15/2cbee642-ecd0-4f1f-9d0b-23acb574fe59.jpe"
+                  alt="Bakso Polos"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Polos</h4>
+                  <p>Bakso klasik dengan kuah gurih dan sambal khas.</p>
+                  <h5 class="text-price">Rp 15.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="zoom-in">
+                <img
+                  src="https://img.kurio.network/MK7TUsKyi-7VWpeRv1YcZpKq7bo=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/10/29/2e53184a-265b-4548-923d-91cf882aa6fa.jpe"
+                  alt="Bakso Mozzarella"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Mozzarella</h4>
+                  <p>Bakso isi keju mozzarella yang lumer di mulut.</p>
+                  <h5 class="text-price">Rp 25.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-right">
+                <img
+                  src="https://down-id.img.susercontent.com/file/21590be9527495463a84d558e3f6fd10"
+                  alt="Bakso Urat"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Urat</h4>
+                  <p>
+                    Bakso urat dengan tekstur kenyal dan cita rasa autentik.
+                  </p>
+                  <h5 class="text-price">Rp 20.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-left">
+                <img
+                  src="https://awsimages.detik.net.id/community/media/visual/2018/10/20/914e6221-e42f-4c78-a793-316b2c81cdfe_43.png?w=600&q=90"
+                  alt="Bakso Pedas"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Pedas</h4>
+                  <p>Bakso dengan kuah pedas menggugah selera.</p>
+                  <h5 class="text-price">Rp 18.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="zoom-in">
+                <img
+                  src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/144/2024/02/02/IMG_20240202_221218-2331666348.jpg"
+                  alt="Bakso Jumbo"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Jumbo</h4>
+                  <p>Bakso berukuran besar dengan cita rasa istimewa.</p>
+                  <h5 class="text-price">Rp 30.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-right">
+                <img
+                  src="https://lezatpedia.id/wp-content/uploads/2023/08/Bakso-Malang-jpg.webp"
+                  alt="Bakso Malang"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Bakso Malang</h4>
+                  <p>Bakso khas Malang dengan pelengkap yang kaya.</p>
+                  <h5 class="text-price">Rp 22.000</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Minuman -->
+        <div class="menu-section" id="minuman">
+          <h3 class="text-start">Minuman</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-left">
+                <img
+                  src="https://asset-3.tstatic.net/jualbeli/img/njajal/2023/11/Waspadai--Ini-4-Ciri-ciri-Es-Teh-Manis-yang-Sudah-Basi--master-855644064.jpg"
+                  alt="Es Teh Manis"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Teh Manis</h4>
+                  <p>Teh manis dingin yang menyegarkan.</p>
+                  <h5 class="text-price">Rp 5.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="zoom-in">
+                <img
+                  src="https://cdn1-production-images-kly.akamaized.net/jeo0JvL1tzY9F-toRZK0MX5599w=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4758697/original/016644100_1709283687-shutterstock_494695573.jpg"
+                  alt="Es Jeruk"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Jeruk</h4>
+                  <p>Jeruk segar peras dengan es batu.</p>
+                  <h5 class="text-price">Rp 8.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-right">
+                <img
+                  src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c40fd730-f994-4470-b36b-f604445ddc5c_Go-Biz_20211008_105544.jpeg"
+                  alt="Es Gunung"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Gunung</h4>
+                  <p>Es segar dengan cita rasa alami.</p>
+                  <h5 class="text-price">Rp 15.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-left">
+                <img
+                  src="https://assets.unileversolutions.com/v1/2005891.jpg"
+                  alt="Es Kopi Susu"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Kopi Susu</h4>
+                  <p>Kopi dingin dengan susu untuk penggemar kopi.</p>
+                  <h5 class="text-price">Rp 15.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="zoom-in">
+                <img
+                  src="https://www.frisianflag.com/storage/app/media/uploaded-files/soda-gembira-boba.jpg"
+                  alt="Es Soda Gembira"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Soda Gembira</h4>
+                  <p>Soda dicampur susu manis yang menyenangkan.</p>
+                  <h5 class="text-price">Rp 12.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-card" data-aos="fade-right">
+                <img
+                  src="https://cdn1-production-images-kly.akamaized.net/PfL5Pe61kf2FgQ0iEECbE0eREZ8=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1256143/original/059892200_1465205665-idememasak.jpg"
+                  alt="Es Campur"
+                />
+                <div class="card-body flex-1">
+                  <h4 class="card-title">Es Campur</h4>
+                  <p>Campuran buah segar, susu, dan es serut.</p>
+                  <h5 class="text-price">Rp 18.000</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2
+          class="fw-bold mb-4 text-uppercase text-primary text-center border-bottom pb-3 d-inline-block mx-auto"
+          style="
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          "
+        >
+          Kontak Kami
+        </h2>
+        <p
+          class="fs-4 mb-5 text-muted text-center"
+          style="max-width: 700px; margin: 0 auto"
+        >
+          Jangan ragu untuk menghubungi kami! Kami siap membantu Anda dengan
+          pertanyaan atau pesanan khusus. Kami juga tersedia di media sosial!
+        </p>
+
+        <div class="row gy-4">
+          <!-- Email Section -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center">
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-envelope fa-3x text-primary"
+                    style="
+                      background: rgba(0, 123, 255, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Email</h5>
+                <p class="fs-5 text-muted">baksolezat@email.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- Phone Section -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center">
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-phone-alt fa-3x text-success"
+                    style="
+                      background: rgba(40, 167, 69, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Telepon</h5>
+                <p class="fs-5 text-muted">(021) 123-4567</p>
+              </div>
+            </div>
+          </div>
+          <!-- Address Section -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center">
+              <div class="card-body py-5">
+                <div class="icon-container mb-3">
+                  <i
+                    class="fas fa-map-marker-alt fa-3x text-danger"
+                    style="
+                      background: rgba(220, 53, 69, 0.1);
+                      padding: 15px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <h5 class="fw-bold text-dark">Alamat</h5>
+                <p class="fs-5 text-muted">Jl. Bakso No. 1, Jakarta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="map-container">
+              <!-- Embed Google Map with custom coordinates -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1190151610435!2d104.05175278891501!3d1.1156491047808836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMXYuMTE1NjQ5MSwgMTA0LjA1MTc1MjU4OTE1!5e0!3m2!1sen!2sid!4v1670358385686!5m2!1sen!2sid"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="text-center mt-5">
+          <a
+            href="mailto:baksolezat@email.com"
+            class="btn btn-md px-4 py-2 rounded-pill shadow-sm"
+            style="
+              font-size: 1.2rem;
+              background-color: var(--dark-green);
+              color: var(--white);
+            "
+          >
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p class="text-white mb-0">
+          &copy; 2024 Bakso Lezat. All rights reserved.
+        </p>
+        <p class="text-white mb-0">
+          Follow us on
+          <a href="#" class="text-white text-decoration-none">Instagram</a> |
+          <a href="#" class="text-white text-decoration-none">Facebook</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500, // Durasi animasi (dalam milidetik)
+        once: true, // Animasi hanya berjalan sekali saat di-scroll
+      });
+    </script>
+  </body>
+</html>
