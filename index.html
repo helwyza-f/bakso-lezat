@@ -35,7 +35,7 @@
       html,
       body {
         height: 100%;
-        margin: 0;
+        padding: 0px -10px; /* Adjust padding to cover body padding */
         display: flex;
         flex-direction: column;
       }
@@ -100,11 +100,6 @@
         background-color: var(--light-green) !important;
       }
       footer {
-        /* background: linear-gradient(
-          to right,
-          #2c3e50,
-          #4f6d7a
-        ); Darker blue gradient */
         padding: 30px;
         text-align: center;
         color: white;
@@ -212,13 +207,7 @@
     <!-- Home Section with Background Image -->
     <section
       id="home"
-      class="d-flex align-items-center justify-content-center bg-primary text-white text-center"
-      style="
-        height: 100vh;
-        background: url('https://img.kurio.network/rE9S29CrLtZ_dW5BiVsp7RufHZw=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/11/15/2cbee642-ecd0-4f1f-9d0b-23acb574fe59.jpe')
-          no-repeat center center;
-        background-size: cover;
-      "
+      class="d-flex align-items-center justify-content-center text-white text-center"
     >
       <div class="container text-center" data-aos="fade-up">
         <div
